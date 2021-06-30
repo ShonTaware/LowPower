@@ -1,0 +1,47 @@
+
+
+.lib "./libs/models/sky130.lib.spice" tt
+*.include "sky130_fd_sc_hd__inv_1.spice"
+
+
+.subckt sky130_fd_sc_hd__inv_1_1 A VGND VNB VPB VPWR Y
+X0 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=0.225 l=0.15
+X1 VPWR A Y VPB sky130_fd_pr__pfet_01v8 w=0.45 l=0.15
+.ends
+
+.subckt sky130_fd_sc_hd__inv_1_2 A VGND VNB VPB VPWR Y
+X0 VGND A Y VNB sky130_fd_pr__nfet_01v8 w=0.225 l=0.45
+X1 VPWR A Y VPB sky130_fd_pr__pfet_01v8 w=0.45 l=0.45
+.ends
+
+
+xinv1 in1 gnd gnd v1 v1 o1 sky130_fd_sc_hd__inv_1_1
+xinv2 o1 gnd gnd v2 v2 out1 sky130_fd_sc_hd__inv_1_2
+
+V1 v1 gnd pwl (0n 0.7V 3ns 0.7V 
++              3ns 0.8V 6ns 0.8V 
++              6ns 0.9V 9ns 0.9V 
++              9ns 1.0V 12ns 1.0V 
++              12ns 1.1V 15ns 1.1V 
++              15ns 1.2V 18ns 1.2V
++              18ns 1.3V 21ns 1.3V
++              21ns 1.4V 24ns 1.4V
++              24ns 1.5V 27ns 1.5V
++              27ns 1.6V 30ns 1.6V
++              30ns 1.7V 33ns 1.7V
++              33ns 1.8V 36ns 1.8V)
+V2 v2 gnd dc 1.8V
+Vout out1 gnd
+Vin in1 gnd pulse 0 1.8 0 0.01ns 0.01ns 1ns 2ns
+
+.tran 0.01n 36n
+.control
+run
+
+plot V(in1)+3 V(v2)+1 V(v1)
+plot V(o1)+2 V(out1)
+
+plot avg(-i(v1))*V(v1)
+plot avg(-i(v2))*V(v2)
+.endc
+.end
