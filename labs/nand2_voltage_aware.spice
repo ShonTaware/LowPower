@@ -1,0 +1,58 @@
+
+
+.lib "../libs/models/sky130.lib.spice" tt
+.include "../libs/std_cells/sky130_fd_sc_hd__nand2_1.spice"
+
+
+X1  V2 V3 GND GND V1 V1 OUT sky130_fd_sc_hd__nand2_1		
+
+
+V1 V1 GND pwl (0n 0.7V 3ns 0.7V 
++              3.1ns 0.8V 6ns 0.8V 
++              6.1ns 0.9V 9ns 0.9V 
++              9.1ns 1.0V 12ns 1.0V 
++              12.1ns 1.1V 15ns 1.1V 
++              15.1ns 1.2V 18ns 1.2V
++              18.1ns 1.3V 21ns 1.3V
++              21.1ns 1.4V 24ns 1.4V
++              24.1ns 1.5V 27ns 1.5V
++              27.1ns 1.6V 30ns 1.6V
++              30.1ns 1.7V 33ns 1.7V
++              33.1ns 1.8V 36ns 1.8V)
+
+V2 V2 GND pwl (0n 0.8V 3.3ns 0.8V 
++              3.4ns 0.9V 6.6ns 0.9V 
++              6.7ns 1.0V 9.9ns 1.0V 
++              10.0ns 1.1V 13.2ns 1.1V 
++              13.3ns 1.2V 16.5ns 1.2V 
++              16.6ns 1.3V 19.8ns 1.3V
++              19.9ns 1.4V 23.1ns 1.4V
++              23.2ns 1.5V 26.4ns 1.5V
++              26.5ns 1.6V 29.7ns 1.6V
++              29.8ns 1.7V 33.2ns 1.7V
++              33.3ns 1.8V 36ns 1.8V)
+
+V3 V3 GND pwl (0n 1.8V 4ns 1.8V 
++              4.11ns 1.6V 8ns 1.6V 
++              8.1ns 1.4V 12ns 1.4V 
++              12.1ns 1.2V 16ns 1.2V 
++              16.1ns 1.0V 20ns 1.0V 
++              20.1ns 0.8V 24ns 0.8V
++              24.1ns 0.6V 28ns 0.6V
++              28.1ns 0.5V 32ns 0.5V
++              32.1ns 0.4V 36ns 0.4V)
+
+Vout OUT GND
+
+
+.tran 0.01n 36n
+.control
+run
+
+save V(V1) V(V2) V(V3) V(OUT)
+save avg(i(v1))
+save avg(i(v2))
+
+.endc
+.end
+

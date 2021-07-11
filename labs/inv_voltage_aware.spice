@@ -1,0 +1,36 @@
+
+
+.lib "../libs/models/sky130.lib.spice" tt
+.include "../libs/std_cells/sky130_fd_sc_hd__inv_1.spice"
+
+X1  IN1 GND GND V1 V1 OUT1 sky130_fd_sc_hd__inv_1_1		
+X2  OUT1 GND GND V2 V2 OUT2 sky130_fd_sc_hd__inv_1_2
+
+V1 V1 GND pwl (0n 0.7V 3ns 0.7V 
++              3.1ns 0.8V 6ns 0.8V 
++              6.1ns 0.9V 9ns 0.9V 
++              9.1ns 1.0V 12ns 1.0V 
++              12.1ns 1.1V 15ns 1.1V 
++              15.1ns 1.2V 18ns 1.2V
++              18.1ns 1.3V 21ns 1.3V
++              21.1ns 1.4V 24ns 1.4V
++              24.1ns 1.5V 27ns 1.5V
++              27.1ns 1.6V 30ns 1.6V
++              30.1ns 1.7V 33ns 1.7V
++              33.1ns 1.8V 36ns 1.8V)
+V2 V2 GND dc 1.8V
+Vout OUT2 gnd
+
+Vin IN1 gnd pulse 0 1.8 0 0.1ns 0.1ns 1.3ns 2.6ns
+
+.tran 0.01n 20n
+.control
+run
+
+save V(V1) V(V2) V(IN1) V(OUT1) V(OUT2)
+save avg(i(v1))
+save avg(i(v2))
+
+.endc
+.end
+

@@ -1,0 +1,88 @@
+
+No compatibility mode selected!
+
+
+Circuit: set ngbehavior=ltpsa
+
+Scale set to 1e-06
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: vout: has no value, DC 0 assumed
+Warning: v2: no DC value, transient time 0 value used
+Warning: vin: no DC value, transient time 0 value used
+Warning: vclk: no DC value, transient time 0 value used
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+v2                                         0.7
+din                                          0
+q0                                         0.7
+reset_b                                    1.8
+clk                                          0
+q1                                         0.7
+q2                                         0.7
+q3                                         0.7
+out                                  0.0157061
+v1                                         1.2
+gnd                                  0.0157061
+vout#branch                                  0
+v2#branch                         -2.49377e-10
+v1#branch                         -2.00735e-07
+vrst#branch                                  0
+vin#branch                                   0
+vclk#branch                                  0
+
+
+No. of Data Rows : 2861
+binary raw file "shift_reg_4bit_v1_constant_v2_varying.raw"
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: vout: has no value, DC 0 assumed
+Warning: v2: no DC value, transient time 0 value used
+Warning: vin: no DC value, transient time 0 value used
+Warning: vclk: no DC value, transient time 0 value used
+No. of Data Columns : 13  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+v2                                         0.7
+din                                          0
+q0                                    0.545726
+reset_b                                    1.8
+clk                                          0
+q1                                    0.545751
+q2                                    0.545772
+q3                                     1.02541
+out                                   0.791157
+v1                                         1.2
+gnd                                   0.791157
+vout#branch                                  0
+v2#branch                          -0.00851315
+v1#branch                         -0.000305902
+vrst#branch                        -0.00366264
+vin#branch                         0.000121792
+vclk#branch                         0.00126266
+
+
+No. of Data Rows : 2861
+
+Total analysis time (seconds) = 3.91262
+
+Total CPU time (seconds) = 25.462 
+
+Total DRAM available = 1986.613 MB.
+DRAM currently available =   96.867 MB.
+Maximum ngspice program size =  118.996 MB.
+Current ngspice program size =  103.668 MB.
+
+Shared ngspice pages =    9.867 MB.
+Text (code) pages =    4.895 MB.
+Stack = 0 bytes.
+Library pages =   94.035 MB.
+

@@ -1,0 +1,129 @@
+
+.lib "../libs/models/sky130.lib.spice" tt
+.include "../libs/std_cells/sky130_fd_sc_hd__fa_1.spice"
+.include "../libs/std_cells/sky130_fd_sc_hd__dfrtp_1.spice"
+.include "../libs/std_cells/sky130_fd_sc_hd__and2_0.spice"
+
+X8  a0 b0 cin GND GND V2 V2 co0 sum0 sky130_fd_sc_hd__fa_1		
+X7  a1 b1 co0 GND GND V2 V2 co1 sum1 sky130_fd_sc_hd__fa_1		
+X6  a2 b2 co1 GND GND V2 V2 co2 sum2 sky130_fd_sc_hd__fa_1		
+X5  a3 b3 co2 GND GND V2 V2 co3 sum3 sky130_fd_sc_hd__fa_1		
+X4  a4 b4 co3 GND GND V2 V2 co4 sum4 sky130_fd_sc_hd__fa_1		
+X3  a5 b5 co4 GND GND V2 V2 co5 sum5 sky130_fd_sc_hd__fa_1		
+X2  a6 b6 co5 GND GND V2 V2 co6 sum6 sky130_fd_sc_hd__fa_1		
+X1  a7 b7 co6 GND GND V2 V2 co7 sum7 sky130_fd_sc_hd__fa_1		
+
+X9  CLK sum7 RESET_B GND GND V2 V2 q7 sky130_fd_sc_hd__dfrtp_1		
+X10  CLK sum6 RESET_B GND GND V2 V2 q6 sky130_fd_sc_hd__dfrtp_1		
+X11  CLK sum5 RESET_B GND GND V2 V2 q5 sky130_fd_sc_hd__dfrtp_1		
+X12  CLK sum4 RESET_B GND GND V2 V2 q4 sky130_fd_sc_hd__dfrtp_1		
+X13  CLK sum3 RESET_B GND GND V2 V2 q3 sky130_fd_sc_hd__dfrtp_1		
+X14  CLK sum2 RESET_B GND GND V2 V2 q2 sky130_fd_sc_hd__dfrtp_1		
+X15  CLK sum1 RESET_B GND GND V2 V2 q1 sky130_fd_sc_hd__dfrtp_1		
+X16  CLK sum0 RESET_B GND GND V2 V2 q0 sky130_fd_sc_hd__dfrtp_1		
+
+X33  a8 b8 co7 GND GND V1 V1 co8 sum8 sky130_fd_sc_hd__fa_1		
+X31  a9 b9 co8 GND GND V1 V1 co9 sum9 sky130_fd_sc_hd__fa_1		
+X29  a10 b10 co9 GND GND V1 V1 co10 sum10 sky130_fd_sc_hd__fa_1		
+X27  a11 b11 co10 GND GND V1 V1 co11 sum11 sky130_fd_sc_hd__fa_1		
+X25  a12 b12 co11 GND GND V1 V1 co12 sum12 sky130_fd_sc_hd__fa_1		
+X23  a13 b13 co12 GND GND V1 V1 co13 sum13 sky130_fd_sc_hd__fa_1		
+X21  a14 b14 co13 GND GND V1 V1 co14 sum14 sky130_fd_sc_hd__fa_1		
+X19  a15 b15 co14 GND GND V1 V1 cout sum15 sky130_fd_sc_hd__fa_1		
+
+X18  CLK_H sum15 RESET_B GND GND V1 V1 q15 sky130_fd_sc_hd__dfrtp_1		
+X20  CLK_H sum14 RESET_B GND GND V1 V1 q14 sky130_fd_sc_hd__dfrtp_1		
+X22  CLK_H sum13 RESET_B GND GND V1 V1 q13 sky130_fd_sc_hd__dfrtp_1		
+X24  CLK_H sum12 RESET_B GND GND V1 V1 q12 sky130_fd_sc_hd__dfrtp_1		
+X26  CLK_H sum11 RESET_B GND GND V1 V1 q11 sky130_fd_sc_hd__dfrtp_1		
+X28  CLK_H sum10 RESET_B GND GND V1 V1 q10 sky130_fd_sc_hd__dfrtp_1		
+X30  CLK_H sum9 RESET_B GND GND V1 V1 q9 sky130_fd_sc_hd__dfrtp_1		
+X32  CLK_H sum8 RESET_B GND GND V1 V1 q8 sky130_fd_sc_hd__dfrtp_1		
+
+X17  CLK Long_Add GND GND VDD VDD CLK_H sky130_fd_sc_hd__and2_0
+
+
+Va0 a0 GND pulse 0 1.8 0.0ns 0.1ns 0.1ns 7ns 14ns
+Va1 a1 GND dc 1.8V
+Va2 a2 GND dc 1.8V
+Va3 a3 GND dc 1.8V
+Va4 a4 GND dc 1.8V
+Va5 a5 GND dc 1.8V
+Va6 a6 GND dc 1.8V
+Va7 a7 GND dc 1.8V
+
+Vb0 b0 GND dc 1.8V
+Vb1 b1 GND dc 1.8V
+Vb2 b2 GND dc 1.8V
+Vb3 b3 GND dc 1.8V
+Vb4 b4 GND dc 1.8V
+Vb5 b5 GND dc 1.8V
+Vb6 b6 GND dc 1.8V
+Vb7 b7 GND dc 1.8V
+
+Vb8 b8 GND dc 0V
+Vb9 b9 GND dc 0V
+Vb10 b10 GND dc 0V
+Vb11 b11 GND dc 0V
+Vb12 b12 GND dc 0V
+Vb13 b13 GND dc 0V
+Vb14 b14 GND dc 0V
+Vb15 b15 GND dc 0V
+
+Va8 a8 GND pulse 0 1.8 0.0ns 0.1ns 0.1ns 7ns 14ns
+Va9 a9 GND dc 0V
+Va10 a10 GND dc 0V
+Va11 a11 GND dc 0V
+Va12 a12 GND dc 0V
+Va13 a13 GND dc 0V
+Va14 a14 GND dc 0V
+Va15 a15 GND dc 0V
+
+
+Vclk CLK GND pulse 0 1.8 2.5ns 0.1ns 0.1ns 2ns 4ns
+Vrst RESET_B GND pwl (0n 0V 2ns 0V 
++              2.1ns 1.8V)
+Vla Long_Add GND pulse 0 1.8 0ns 0.1ns 0.1ns 24ns 48ns
+*Vla Long_Add GND dc 1.8V
+V1 V1 GND dc 1.8V
+V2 V2 GND dc 1.8V
+Vdd VDD GND dc 1.8V
+Vcin cin GND dc 0V
+
+*Vq0 q0 GND
+*Vq1 q1 GND
+*Vq2 q2 GND
+*Vq3 q3 GND
+*Vq4 q4 GND
+*Vq5 q5 GND
+*Vq6 q6 GND
+*Vq7 q7 GND
+
+*Vq8 q8 GND
+*Vq9 q9 GND
+*Vq10 q10 GND
+*Vq11 q11 GND
+*Vq12 q12 GND
+*Vq13 q13 GND
+*Vq14 q14 GND
+*Vq15 q15 GND
+
+*Vcout cout GND
+
+.tran 0.01n 48n
+.control
+run
+
+
+save V(CLK) V(CLK_H) V(RESET_B) V(Long_Add) V(cin)
+save i(CLK) i(CLK_H) i(RESET_B) i(Long_Add) i(VDD) i(v1) i(v2)
+save V(a0) V(a1) V(a2) V(a3) V(a4) V(a5) V(a6) V(a7) V(a8) V(a9) V(a10) V(a11) V(a12) V(a13) V(a14) V(a15)
+save V(b0) V(b1) V(b2) V(b3) V(b4) V(b5) V(b6) V(b7) V(b8) V(b9) V(b10) V(b11) V(b12) V(b13) V(b14) V(b15)
+save V(q0) V(q1) V(q2) V(q3) V(q4) V(q5) V(q6) V(q7) V(q8) V(q9) V(q10) V(q11) V(q12) V(q13) V(q14) V(q15)
+save V(cout)
+save i(v1) vs i(v2)
+
+
+.endc
+.end
+

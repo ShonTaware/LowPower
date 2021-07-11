@@ -1,0 +1,72 @@
+
+No compatibility mode selected!
+
+
+Circuit: 
+
+Scale set to 1e-06
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: vin: no DC value, transient time 0 value used
+Warning: vout: has no value, DC 0 assumed
+Warning: v1: no DC value, transient time 0 value used
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+in1                                          0
+out1                                       0.7
+v1                                         0.7
+out2                                   0.11297
+v2                                         1.8
+gnd                                    0.11297
+vin#branch                                   0
+vout#branch                                  0
+v2#branch                         -6.02939e-07
+v1#branch                         -7.23534e-13
+
+
+No. of Data Rows : 2137
+binary raw file "inv_voltage_aware.raw"
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: vin: no DC value, transient time 0 value used
+Warning: vout: has no value, DC 0 assumed
+Warning: v1: no DC value, transient time 0 value used
+No. of Data Columns : 8  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+in1                                          0
+out1                                   1.12097
+v1                                         0.7
+out2                                   1.80159
+v2                                         1.8
+gnd                                    1.80159
+vin#branch                         0.000476701
+vout#branch                                  0
+v2#branch                         -0.000902293
+v1#branch                         -0.000332867
+
+
+No. of Data Rows : 2137
+
+Total analysis time (seconds) = 0.093533
+
+Total CPU time (seconds) = 15.552 
+
+Total DRAM available = 1986.613 MB.
+DRAM currently available =   74.172 MB.
+Maximum ngspice program size =   80.750 MB.
+Current ngspice program size =   65.145 MB.
+
+Shared ngspice pages =    9.559 MB.
+Text (code) pages =    4.895 MB.
+Stack = 0 bytes.
+Library pages =   55.789 MB.
+

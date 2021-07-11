@@ -1,0 +1,322 @@
+
+No compatibility mode selected!
+
+
+Circuit: 
+
+Scale set to 1e-06
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: vpg: no DC value, transient time 0 value used
+Warning: vla: no DC value, transient time 0 value used
+Warning: vrst: no DC value, transient time 0 value used
+Warning: vclk: no DC value, transient time 0 value used
+Warning: va8: no DC value, transient time 0 value used
+Warning: va0: no DC value, transient time 0 value used
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vss                                       -0.2
+a0                                           0
+b0                                         1.8
+v2                                         1.8
+cin                                          0
+sum0                                       1.8
+co0                                       -0.2
+a1                                         1.8
+b1                                         1.8
+sum1                                      -0.2
+co1                                        1.8
+a2                                         1.8
+b2                                         1.8
+sum2                                       1.8
+co2                                        1.8
+a3                                         1.8
+b3                                         1.8
+sum3                                       1.8
+co3                                        1.8
+a4                                         1.8
+b4                                         1.8
+sum4                                       1.8
+co4                                        1.8
+a5                                         1.8
+b5                                         1.8
+sum5                                       1.8
+co5                                        1.8
+a6                                         1.8
+b6                                         1.8
+sum6                                       1.8
+co6                                        1.8
+a7                                         1.8
+b7                                         1.8
+sum7                                       1.8
+co7                                        1.8
+q7                                        -0.2
+reset_b                                      0
+clk                                          0
+q6                                        -0.2
+q5                                        -0.2
+q4                                        -0.2
+q3                                        -0.2
+q2                                        -0.2
+q1                                        -0.2
+q0                                        -0.2
+gnd_h                                  1.67457
+a8                                           0
+b8                                           0
+v1                                         1.8
+sum8                                   1.79418
+co8                                    1.79328
+a9                                           0
+b9                                           0
+sum9                                    1.7941
+co9                                    1.79328
+a10                                          0
+b10                                          0
+sum10                                   1.7941
+co10                                   1.79328
+a11                                          0
+b11                                          0
+sum11                                   1.7941
+co11                                   1.79328
+a12                                          0
+b12                                          0
+sum12                                   1.7941
+co12                                   1.79328
+a13                                          0
+b13                                          0
+sum13                                   1.7941
+co13                                   1.79328
+a14                                          0
+b14                                          0
+sum14                                   1.7941
+co14                                   1.79328
+a15                                          0
+b15                                          0
+sum15                                   1.7941
+cout                                   1.79328
+q15                                    1.79328
+clk_h                               7.3422e-07
+q14                                    1.79328
+q13                                    1.79328
+q12                                    1.79328
+q11                                    1.79328
+q10                                    1.79328
+q9                                     1.79328
+q8                                     1.79328
+long_add                                     0
+vdd                                        1.8
+pg                                           0
+vcin#branch                                  0
+vss#branch                         1.18228e-08
+vdd#branch                        -3.94065e-10
+v2#branch                         -1.17905e-08
+v1#branch                         -3.23455e-11
+vpg#branch                                   0
+vla#branch                                   0
+vrst#branch                                  0
+vclk#branch                                  0
+va15#branch                                  0
+va14#branch                                  0
+va13#branch                                  0
+va12#branch                                  0
+va11#branch                                  0
+va10#branch                                  0
+va9#branch                                   0
+va8#branch                                   0
+vb15#branch                                  0
+vb14#branch                                  0
+vb13#branch                                  0
+vb12#branch                                  0
+vb11#branch                                  0
+vb10#branch                                  0
+vb9#branch                                   0
+vb8#branch                                   0
+vb7#branch                                   0
+vb6#branch                                   0
+vb5#branch                                   0
+vb4#branch                                   0
+vb3#branch                                   0
+vb2#branch                                   0
+vb1#branch                                   0
+vb0#branch                                   0
+va7#branch                                   0
+va6#branch                                   0
+va5#branch                                   0
+va4#branch                                   0
+va3#branch                                   0
+va2#branch                                   0
+va1#branch                                   0
+va0#branch                                   0
+
+
+No. of Data Rows : 4943
+binary raw file "adder_power_gating.raw"
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: vpg: no DC value, transient time 0 value used
+Warning: vla: no DC value, transient time 0 value used
+Warning: vrst: no DC value, transient time 0 value used
+Warning: vclk: no DC value, transient time 0 value used
+Warning: va8: no DC value, transient time 0 value used
+Warning: va0: no DC value, transient time 0 value used
+No. of Data Columns : 62  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vss                                       -0.2
+a0                                           0
+b0                                         1.8
+v2                                         1.8
+cin                                          0
+sum0                                  0.733441
+co0                                   0.884548
+a1                                         1.8
+b1                                         1.8
+sum1                                  0.721672
+co1                                   0.879801
+a2                                         1.8
+b2                                         1.8
+sum2                                  0.721715
+co2                                   0.879828
+a3                                         1.8
+b3                                         1.8
+sum3                                  0.721715
+co3                                   0.879828
+a4                                         1.8
+b4                                         1.8
+sum4                                  0.721715
+co4                                   0.879828
+a5                                         1.8
+b5                                         1.8
+sum5                                  0.721715
+co5                                   0.879835
+a6                                         1.8
+b6                                         1.8
+sum6                                  0.721715
+co6                                    0.88201
+a7                                         1.8
+b7                                         1.8
+sum7                                  0.721777
+co7                                    1.48125
+q7                                    0.488791
+reset_b                                      0
+clk                                          0
+q6                                    0.488791
+q5                                    0.488791
+q4                                    0.488791
+q3                                    0.488791
+q2                                    0.488791
+q1                                    0.488791
+q0                                    0.488792
+gnd_h                                  1.63311
+a8                                           0
+b8                                           0
+v1                                         1.8
+sum8                                   1.88066
+co8                                    1.75977
+a9                                           0
+b9                                           0
+sum9                                   1.88955
+co9                                     1.7617
+a10                                          0
+b10                                          0
+sum10                                  1.88961
+co10                                   1.76171
+a11                                          0
+b11                                          0
+sum11                                  1.88961
+co11                                   1.76171
+a12                                          0
+b12                                          0
+sum12                                  1.88961
+co12                                   1.76171
+a13                                          0
+b13                                          0
+sum13                                  1.88961
+co13                                   1.76171
+a14                                          0
+b14                                          0
+sum14                                  1.88961
+co14                                   1.76169
+a15                                          0
+b15                                          0
+sum15                                   1.8896
+cout                                    1.7579
+q15                                    1.80665
+clk_h                                  2.16656
+q14                                    1.80665
+q13                                    1.80665
+q12                                    1.80665
+q11                                    1.80665
+q10                                    1.80665
+q9                                     1.80665
+q8                                     1.80665
+long_add                                     0
+vdd                                        1.8
+pg                                           0
+vcin#branch                        0.000861018
+vss#branch                           0.0702717
+vdd#branch                         -0.00101122
+v2#branch                           -0.0616661
+v1#branch                            -0.050159
+vpg#branch                         -0.00105902
+vla#branch                          0.00031623
+vrst#branch                          0.0153216
+vclk#branch                         0.00541829
+va15#branch                          0.0024658
+va14#branch                         0.00246581
+va13#branch                         0.00246581
+va12#branch                         0.00246581
+va11#branch                         0.00246581
+va10#branch                         0.00246581
+va9#branch                          0.00246576
+va8#branch                          0.00245998
+vb15#branch                         0.00236663
+vb14#branch                         0.00236669
+vb13#branch                         0.00236669
+vb12#branch                         0.00236669
+vb11#branch                         0.00236669
+vb10#branch                         0.00236669
+vb9#branch                          0.00236657
+vb8#branch                          0.00234886
+vb7#branch                         -0.00113234
+vb6#branch                         -0.00113551
+vb5#branch                         -0.00113552
+vb4#branch                         -0.00113552
+vb3#branch                         -0.00113552
+vb2#branch                         -0.00113552
+vb1#branch                         -0.00113534
+vb0#branch                         -0.00113279
+va7#branch                         -0.00137965
+va6#branch                         -0.00138054
+va5#branch                         -0.00138055
+va4#branch                         -0.00138055
+va3#branch                         -0.00138055
+va2#branch                         -0.00138055
+va1#branch                         -0.00138048
+va0#branch                            0.001239
+
+
+No. of Data Rows : 4943
+
+Total analysis time (seconds) = 88.4154
+
+Total CPU time (seconds) = 775.438 
+
+Total DRAM available = 1986.613 MB.
+DRAM currently available =   83.586 MB.
+Maximum ngspice program size =  770.320 MB.
+Current ngspice program size =  747.645 MB.
+
+Shared ngspice pages =    2.613 MB.
+Text (code) pages =    4.895 MB.
+Stack = 0 bytes.
+Library pages =  745.359 MB.
+

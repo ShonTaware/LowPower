@@ -1,0 +1,440 @@
+
+No compatibility mode selected!
+
+
+Circuit: 
+
+Scale set to 1e-06
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: vcout: has no value, DC 0 assumed
+Warning: vq15: has no value, DC 0 assumed
+Warning: vq14: has no value, DC 0 assumed
+Warning: vq13: has no value, DC 0 assumed
+Warning: vq12: has no value, DC 0 assumed
+Warning: vq11: has no value, DC 0 assumed
+Warning: vq10: has no value, DC 0 assumed
+Warning: vq9: has no value, DC 0 assumed
+Warning: vq8: has no value, DC 0 assumed
+Warning: vq7: has no value, DC 0 assumed
+Warning: vq6: has no value, DC 0 assumed
+Warning: vq5: has no value, DC 0 assumed
+Warning: vq4: has no value, DC 0 assumed
+Warning: vq3: has no value, DC 0 assumed
+Warning: vq2: has no value, DC 0 assumed
+Warning: vq1: has no value, DC 0 assumed
+Warning: vq0: has no value, DC 0 assumed
+Warning: v2: no DC value, transient time 0 value used
+Warning: vla: no DC value, transient time 0 value used
+Warning: vclk: no DC value, transient time 0 value used
+Warning: va15: no DC value, transient time 0 value used
+Warning: va14: no DC value, transient time 0 value used
+Warning: va13: no DC value, transient time 0 value used
+Warning: va12: no DC value, transient time 0 value used
+Warning: va11: no DC value, transient time 0 value used
+Warning: va10: no DC value, transient time 0 value used
+Warning: va9: no DC value, transient time 0 value used
+Warning: va8: no DC value, transient time 0 value used
+Warning: vb15: no DC value, transient time 0 value used
+Warning: vb14: no DC value, transient time 0 value used
+Warning: vb13: no DC value, transient time 0 value used
+Warning: vb12: no DC value, transient time 0 value used
+Warning: vb11: no DC value, transient time 0 value used
+Warning: vb10: no DC value, transient time 0 value used
+Warning: vb9: no DC value, transient time 0 value used
+Warning: vb8: no DC value, transient time 0 value used
+Warning: vb7: no DC value, transient time 0 value used
+Warning: vb6: no DC value, transient time 0 value used
+Warning: vb5: no DC value, transient time 0 value used
+Warning: vb4: no DC value, transient time 0 value used
+Warning: vb3: no DC value, transient time 0 value used
+Warning: vb2: no DC value, transient time 0 value used
+Warning: vb1: no DC value, transient time 0 value used
+Warning: vb0: no DC value, transient time 0 value used
+Warning: va7: no DC value, transient time 0 value used
+Warning: va6: no DC value, transient time 0 value used
+Warning: va5: no DC value, transient time 0 value used
+Warning: va4: no DC value, transient time 0 value used
+Warning: va3: no DC value, transient time 0 value used
+Warning: va2: no DC value, transient time 0 value used
+Warning: va1: no DC value, transient time 0 value used
+Warning: va0: no DC value, transient time 0 value used
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+a0                                           0
+b0                                           0
+v2                                         0.7
+cin                                          0
+sum0                               9.30232e-07
+co0                                9.30173e-07
+a1                                           0
+b1                                           0
+sum1                               9.30232e-07
+co1                                9.30173e-07
+a2                                           0
+b2                                           0
+sum2                               9.30232e-07
+co2                                9.30173e-07
+a3                                           0
+b3                                           0
+sum3                               9.30232e-07
+co3                                9.30173e-07
+a4                                           0
+b4                                           0
+sum4                               9.30232e-07
+co4                                9.30173e-07
+a5                                           0
+b5                                           0
+sum5                               9.30232e-07
+co5                                9.30173e-07
+a6                                           0
+b6                                           0
+sum6                               9.30232e-07
+co6                                9.30173e-07
+a7                                           0
+b7                                           0
+sum7                               9.30232e-07
+co7                                9.30173e-07
+q7                                 0.000627803
+reset_b                                    1.8
+clk                                          0
+q6                                 0.000627803
+q5                                 0.000627803
+q4                                 0.000627803
+q3                                 0.000627803
+q2                                 0.000627803
+q1                                 0.000627803
+q0                                 0.000627803
+a8                                           0
+b8                                           0
+v1                                         1.8
+sum8                               3.27374e-07
+co8                                3.27373e-07
+a9                                           0
+b9                                           0
+sum9                               3.27374e-07
+co9                                3.27373e-07
+a10                                          0
+b10                                          0
+sum10                              3.27374e-07
+co10                               3.27373e-07
+a11                                          0
+b11                                          0
+sum11                              3.27374e-07
+co11                               3.27373e-07
+a12                                          0
+b12                                          0
+sum12                              3.27374e-07
+co12                               3.27373e-07
+a13                                          0
+b13                                          0
+sum13                              3.27374e-07
+co13                               3.27373e-07
+a14                                          0
+b14                                          0
+sum14                              3.27374e-07
+co14                               3.27373e-07
+a15                                          0
+b15                                          0
+sum15                              3.27374e-07
+cout                               0.000627803
+q15                                0.000627803
+clk_h                               7.3422e-07
+q14                                0.000627803
+q13                                0.000627803
+q12                                0.000627803
+q11                                0.000627803
+q10                                0.000627803
+q9                                 0.000627803
+q8                                 0.000627803
+long_add                                     0
+vdd                                        1.8
+gnd                                0.000627803
+vcout#branch                      -6.12805e-07
+vq15#branch                       -6.12805e-07
+vq14#branch                       -6.12805e-07
+vq13#branch                       -6.12805e-07
+vq12#branch                       -6.12805e-07
+vq11#branch                       -6.12805e-07
+vq10#branch                       -6.12805e-07
+vq9#branch                        -6.12805e-07
+vq8#branch                        -6.12805e-07
+vq7#branch                         1.38379e-06
+vq6#branch                        -1.28061e-08
+vq5#branch                         1.38379e-06
+vq4#branch                         1.38379e-06
+vq3#branch                         2.85047e-09
+vq2#branch                        -1.28061e-08
+vq1#branch                         1.38379e-06
+vq0#branch                         2.85047e-09
+v1#branch                         -1.63646e-08
+v2#branch                         -5.54478e-06
+vcin#branch                                  0
+vdd#branch                        -3.94065e-10
+vrst#branch                                  0
+vla#branch                                   0
+vclk#branch                                  0
+va15#branch                                  0
+va14#branch                                  0
+va13#branch                                  0
+va12#branch                                  0
+va11#branch                                  0
+va10#branch                                  0
+va9#branch                                   0
+va8#branch                                   0
+vb15#branch                                  0
+vb14#branch                                  0
+vb13#branch                                  0
+vb12#branch                                  0
+vb11#branch                                  0
+vb10#branch                                  0
+vb9#branch                                   0
+vb8#branch                                   0
+vb7#branch                                   0
+vb6#branch                                   0
+vb5#branch                                   0
+vb4#branch                                   0
+vb3#branch                                   0
+vb2#branch                                   0
+vb1#branch                                   0
+vb0#branch                                   0
+va7#branch                                   0
+va6#branch                                   0
+va5#branch                                   0
+va4#branch                                   0
+va3#branch                                   0
+va2#branch                                   0
+va1#branch                                   0
+va0#branch                                   0
+
+
+No. of Data Rows : 3113
+binary raw file "adder_multi_vdd.raw"
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Warning: vcout: has no value, DC 0 assumed
+Warning: vq15: has no value, DC 0 assumed
+Warning: vq14: has no value, DC 0 assumed
+Warning: vq13: has no value, DC 0 assumed
+Warning: vq12: has no value, DC 0 assumed
+Warning: vq11: has no value, DC 0 assumed
+Warning: vq10: has no value, DC 0 assumed
+Warning: vq9: has no value, DC 0 assumed
+Warning: vq8: has no value, DC 0 assumed
+Warning: vq7: has no value, DC 0 assumed
+Warning: vq6: has no value, DC 0 assumed
+Warning: vq5: has no value, DC 0 assumed
+Warning: vq4: has no value, DC 0 assumed
+Warning: vq3: has no value, DC 0 assumed
+Warning: vq2: has no value, DC 0 assumed
+Warning: vq1: has no value, DC 0 assumed
+Warning: vq0: has no value, DC 0 assumed
+Warning: v2: no DC value, transient time 0 value used
+Warning: vla: no DC value, transient time 0 value used
+Warning: vclk: no DC value, transient time 0 value used
+Warning: va15: no DC value, transient time 0 value used
+Warning: va14: no DC value, transient time 0 value used
+Warning: va13: no DC value, transient time 0 value used
+Warning: va12: no DC value, transient time 0 value used
+Warning: va11: no DC value, transient time 0 value used
+Warning: va10: no DC value, transient time 0 value used
+Warning: va9: no DC value, transient time 0 value used
+Warning: va8: no DC value, transient time 0 value used
+Warning: vb15: no DC value, transient time 0 value used
+Warning: vb14: no DC value, transient time 0 value used
+Warning: vb13: no DC value, transient time 0 value used
+Warning: vb12: no DC value, transient time 0 value used
+Warning: vb11: no DC value, transient time 0 value used
+Warning: vb10: no DC value, transient time 0 value used
+Warning: vb9: no DC value, transient time 0 value used
+Warning: vb8: no DC value, transient time 0 value used
+Warning: vb7: no DC value, transient time 0 value used
+Warning: vb6: no DC value, transient time 0 value used
+Warning: vb5: no DC value, transient time 0 value used
+Warning: vb4: no DC value, transient time 0 value used
+Warning: vb3: no DC value, transient time 0 value used
+Warning: vb2: no DC value, transient time 0 value used
+Warning: vb1: no DC value, transient time 0 value used
+Warning: vb0: no DC value, transient time 0 value used
+Warning: va7: no DC value, transient time 0 value used
+Warning: va6: no DC value, transient time 0 value used
+Warning: va5: no DC value, transient time 0 value used
+Warning: va4: no DC value, transient time 0 value used
+Warning: va3: no DC value, transient time 0 value used
+Warning: va2: no DC value, transient time 0 value used
+Warning: va1: no DC value, transient time 0 value used
+Warning: va0: no DC value, transient time 0 value used
+No. of Data Columns : 59  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+a0                                           0
+b0                                           0
+v2                                         0.7
+cin                                          0
+sum0                                  0.543518
+co0                                    0.53666
+a1                                           0
+b1                                           0
+sum1                                  0.551668
+co1                                   0.542078
+a2                                           0
+b2                                           0
+sum2                                  0.551709
+co2                                   0.542123
+a3                                           0
+b3                                           0
+sum3                                  0.551709
+co3                                   0.542123
+a4                                           0
+b4                                           0
+sum4                                  0.551709
+co4                                   0.542123
+a5                                           0
+b5                                           0
+sum5                                  0.551709
+co5                                    0.54214
+a6                                           0
+b6                                           0
+sum6                                  0.551711
+co6                                   0.544741
+a7                                           0
+b7                                           0
+sum7                                   0.55196
+co7                                   0.910018
+q7                                    0.678219
+reset_b                                    1.8
+clk                                          0
+q6                                    0.678219
+q5                                    0.678219
+q4                                    0.678219
+q3                                    0.678219
+q2                                    0.678219
+q1                                    0.678219
+q0                                    0.678219
+a8                                           0
+b8                                           0
+v1                                         1.8
+sum8                                  0.878611
+co8                                   0.943431
+a9                                           0
+b9                                           0
+sum9                                  0.878156
+co9                                   0.943324
+a10                                          0
+b10                                          0
+sum10                                 0.878158
+co10                                  0.943324
+a11                                          0
+b11                                          0
+sum11                                 0.878158
+co11                                  0.943324
+a12                                          0
+b12                                          0
+sum12                                 0.878158
+co12                                  0.943324
+a13                                          0
+b13                                          0
+sum13                                 0.878158
+co13                                   0.94332
+a14                                          0
+b14                                          0
+sum14                                 0.878158
+co14                                  0.942279
+a15                                          0
+b15                                          0
+sum15                                 0.878298
+cout                                  0.678219
+q15                                   0.678219
+clk_h                                  1.38948
+q14                                   0.678219
+q13                                   0.678219
+q12                                   0.678219
+q11                                   0.678219
+q10                                   0.678219
+q9                                    0.678219
+q8                                    0.678219
+long_add                                     0
+vdd                                        1.8
+gnd                                   0.678219
+vcout#branch                       1.77272e-05
+vq15#branch                        1.33601e-05
+vq14#branch                        1.33601e-05
+vq13#branch                        1.33601e-05
+vq12#branch                        1.33601e-05
+vq11#branch                        1.33601e-05
+vq10#branch                        1.33601e-05
+vq9#branch                         1.33601e-05
+vq8#branch                         1.33601e-05
+vq7#branch                         -1.5576e-05
+vq6#branch                         -1.5576e-05
+vq5#branch                         -1.5576e-05
+vq4#branch                         -1.5576e-05
+vq3#branch                         -1.5576e-05
+vq2#branch                         -1.5576e-05
+vq1#branch                         -1.5576e-05
+vq0#branch                        -1.55761e-05
+v1#branch                           -0.0662729
+v2#branch                           -0.0384882
+vcin#branch                        0.000395911
+vdd#branch                         -0.00109593
+vrst#branch                         -0.0123204
+vla#branch                         0.000311612
+vclk#branch                         0.00288889
+va15#branch                         0.00126327
+va14#branch                         0.00126355
+va13#branch                         0.00126355
+va12#branch                         0.00126355
+va11#branch                         0.00126355
+va10#branch                         0.00126355
+va9#branch                          0.00126355
+va8#branch                          0.00126296
+vb15#branch                         0.00114477
+vb14#branch                         0.00114746
+vb13#branch                         0.00114747
+vb12#branch                         0.00114747
+vb11#branch                         0.00114747
+vb10#branch                         0.00114747
+vb9#branch                          0.00114747
+vb8#branch                          0.00114575
+vb7#branch                         0.000483264
+vb6#branch                         0.000478438
+vb5#branch                         0.000478407
+vb4#branch                         0.000478406
+vb3#branch                         0.000478406
+vb2#branch                         0.000478404
+vb1#branch                         0.000478149
+vb0#branch                          0.00045251
+va7#branch                         0.000453419
+va6#branch                         0.000453258
+va5#branch                         0.000453257
+va4#branch                         0.000453257
+va3#branch                         0.000453257
+va2#branch                         0.000453256
+va1#branch                          0.00045316
+va0#branch                         0.000444126
+
+
+No. of Data Rows : 3113
+
+Total analysis time (seconds) = 62.9415
+
+Total CPU time (seconds) = 742.015 
+
+Total DRAM available = 1986.613 MB.
+DRAM currently available =  607.887 MB.
+Maximum ngspice program size =  724.406 MB.
+Current ngspice program size =  708.484 MB.
+
+Shared ngspice pages =    9.355 MB.
+Text (code) pages =    4.895 MB.
+Stack = 0 bytes.
+Library pages =  699.445 MB.
+

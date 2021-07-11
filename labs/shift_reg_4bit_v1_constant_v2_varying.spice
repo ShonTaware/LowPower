@@ -1,0 +1,45 @@
+set ngbehavior=ltpsa
+
+.lib "../libs/models/sky130.lib.spice" tt
+.include "../libs/std_cells/sky130_fd_sc_hd__dfrtp_1.spice"
+.include "../libs/std_cells/sky130_fd_sc_hd__inv_1.spice"
+
+*.subckt sky130_fd_sc_hd__inv_1 A VGND VNB VPB VPWR Y
+*.subckt sky130_fd_sc_hd__dfxtp_1 CLK D VGND VNB VPB VPWR Q
+*.subckt sky130_fd_sc_hd__dfrtp_1 CLK D RESET_B VGND VNB VPB VPWR Q
+
+X1  CLK Din RESET_B GND GND V2 V2 Q0 sky130_fd_sc_hd__dfrtp_1		
+X2  CLK Q0 RESET_B GND GND V2 V2 Q1 sky130_fd_sc_hd__dfrtp_1		
+X3  CLK Q1 RESET_B GND GND V2 V2 Q2 sky130_fd_sc_hd__dfrtp_1		
+X4  CLK Q2 RESET_B GND GND V2 V2 Q3 sky130_fd_sc_hd__dfrtp_1		
+X5  Q3 GND GND V1 V1 OUT sky130_fd_sc_hd__inv_1		
+
+Vclk CLK GND pulse 0 1.8 0.1ns 0.05ns 0.05ns 0.5ns 1ns
+Vin Din GND pulse 0 1.8 0.3ns 0.05ns 0.05ns 1ns 2ns
+Vrst RESET_B GND dc 1.8V
+V1 V1 GND dc 1.2V
+V2 V2 GND pwl (0n 0.7V 3ns 0.7V 
++              3.1ns 0.8V 6ns 0.8V 
++              6.1ns 0.9V 9ns 0.9V 
++              9.1ns 1.0V 12ns 1.0V 
++              12.1ns 1.1V 15ns 1.1V 
++              15.1ns 1.2V 18ns 1.2V
++              18.1ns 1.3V 21ns 1.3V
++              21.1ns 1.4V 24ns 1.4V
++              24.1ns 1.5V 27ns 1.5V
++              27.1ns 1.6V 30ns 1.6V
++              30.1ns 1.7V 33ns 1.7V
++              33.1ns 1.8V 36ns 1.8V)
+
+Vout OUT GND
+
+.tran 0.01n 24n
+.control
+run
+
+save V(V1) V(V2) V(CLK) V(RESET_B) V(Din) V(Q0) V(Q1) V(Q2) V(Q3) V(OUT)
+save i(V1) i(V2) i(OUT)
+
+.endc
+.end
+
