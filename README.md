@@ -1,8 +1,9 @@
 # Low Power Labs
 
-## With Varying V1 and constant V2
+## Usage
 
-<img src="images/spice_wave_lab1_1.JPG">
-<img src="images/spice_wave_lab1_2.JPG">
-<img src="images/spice_wave_lab1_3.JPG">
-<img src="images/spice_wave_lab1_4.JPG">
+```
+  git clone https://github.com/ShonTaware/LowPower.git
+  cd LowPower/labs/
+  ngspice <name-of-spice-netlist>
+```
