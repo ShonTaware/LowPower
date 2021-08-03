@@ -1,0 +1,20 @@
+########Create power domain
+create_power_domain PD_TOP \
+	-include_scope
+
+create_power_domain PD_ADDER_LSB \
+-elements {adder_lsb}
+
+create_power_domain PD_ADDER_MSB \
+-elements {adder_msb}
+
+
+########Supply Network
+create_supply_port VDD -direction in
+create_supply_port VSS -direction in
+
+create_supply_net Pwr -domain PD_TOP
+create_supply_net Gnd -domain PD_TOP
+
+connect_supply_net Pwr -ports {VDD}
+connect_supply_net Gnd -ports {VSS}
