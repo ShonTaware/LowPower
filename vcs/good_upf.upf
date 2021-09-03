@@ -1,5 +1,5 @@
 
-set upf_create_implicit_supply_sets false
+#set upf_create_implicit_supply_sets false
 
 ########Create power domain
 create_power_domain PD_TOP \
