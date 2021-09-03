@@ -11,7 +11,7 @@
 ## UPF in Synopsys VCS
 ```
   git clone https://github.com/ShonTaware/LowPower.git
-  cd LowPower/labs/
+  cd LowPower/vcs/
   
   csh
   vcs -full64 -power_top tb_top -upf <path-to-upf-file> -f <.f-file>  
