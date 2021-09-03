@@ -8,6 +8,16 @@
   ngspice <name-of-spice-netlist>
 ```
 
+## UPF in Synopsys VCS
+```
+  git clone https://github.com/ShonTaware/LowPower.git
+  cd LowPower/labs/
+  
+  csh
+  vcs -full64 -power_top tb_top -sverilog -upf <path-to-upf-file> -f demo.f  
+```
+
+
 ## UPF in Synopsys Design Compiler
 ```
   git clone https://github.com/ShonTaware/LowPower.git
