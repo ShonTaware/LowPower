@@ -1,0 +1,122 @@
+
+set upf_create_implicit_supply_sets false
+
+########Create power domain
+create_power_domain PD_TOP \
+	-include_scope
+
+create_power_domain PD_ADDER_LSB \
+-elements {uut/adder_lsb}
+
+create_power_domain PD_ADDER_MSB \
+-elements {uut/adder_msb}
+
+
+########Supply Network
+create_supply_port VDD \
+	-direction in
+create_supply_port VSS \
+	-direction in
+
+create_supply_net Pwr -domain PD_TOP
+create_supply_net Gnd -domain PD_TOP
+
+connect_supply_net Pwr -ports {VDD}
+connect_supply_net Gnd -ports {VSS}
+
+
+set_domain_supply_net PD_TOP \
+	-primary_power_net Pwr \
+	-primary_ground_net Gnd
+
+######## External Switching
+# V1 to MSB 8bits
+create_supply_port VIN1 \
+	-direction in
+
+create_supply_net V1 \
+	-domain PD_ADDER_MSB
+
+create_supply_net Gnd -reuse \
+	-domain PD_ADDER_MSB
+
+connect_supply_net V1 -ports {VIN1}
+
+set_domain_supply_net PD_ADDER_MSB \
+	-primary_power_net V1 \
+	-primary_ground_net Gnd
+
+# V2 to MSB 8bits
+create_supply_port VIN2 \
+	-direction in
+
+create_supply_net V2 \
+	-domain PD_ADDER_LSB
+
+create_supply_net Gnd -reuse \
+	-domain PD_ADDER_LSB
+
+connect_supply_net V2 -ports {VIN2}
+
+set_domain_supply_net PD_ADDER_LSB \
+	-primary_power_net V2 \
+	-primary_ground_net Gnd
+
+######## Supply Port States
+# always on
+add_port_state VDD \
+	-state {ON_18 1.8}
+
+
+# externally switched
+add_port_state VIN1 \
+	-state {ON_09 0.9} \
+	-state {OFF off}
+
+add_port_state VIN2 \
+	-state {ON_12 1.2} \
+	-state {OFF off}
+
+# common ground
+add_port_state VSS \
+	-state {ON_00 0.0} 
+
+########################################################
+
+# Power State Table
+# create_pst
+create_pst PST1 -supplies { VDD VIN1 VIN2 VSS }
+
+# add_pst_state
+add_pst_state Normal -pst PST1 -state {ON_18 ON_09 ON_12 ON_00}
+add_pst_state Sleep -pst PST1 -state {ON_18 OFF ON_12 ON_00}
+add_pst_state Hibernate -pst PST1 -state {ON_18 OFF OFF ON_00} 
+
+# Isolation
+set_isolation ISO_ADDER_MSB \
+	-domain PD_ADDER_MSB \
+	-applies_to outputs \
+	-clamp_value 0 \
+	-isolation_power_net Pwr \
+	-isolation_ground_net Gnd
+
+set_isolation_control ISO_ADDER_MSB \
+	-domain PD_ADDER_MSB \
+	-isolation_signal CG \
+	-isolation_sense high \
+	-location parent
+
+set_isolation ISO_ADDER_LSB \
+	-domain PD_ADDER_LSB \
+	-applies_to outputs \
+	-clamp_value 0 \
+	-isolation_power_net Pwr \
+	-isolation_ground_net Gnd
+
+set_isolation_control ISO_ADDER_LSB \
+	-domain PD_ADDER_LSB \
+	-isolation_signal CG \
+	-isolation_sense high \
+	-location parent
+
+
