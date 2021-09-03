@@ -14,7 +14,9 @@
   cd LowPower/labs/
   
   csh
-  vcs -full64 -power_top tb_top -sverilog -upf <path-to-upf-file> -f demo.f  
+  vcs -full64 -power_top tb_top -upf <path-to-upf-file> -f <.f-file>  
+  
+  ./simv
 ```
 
 
