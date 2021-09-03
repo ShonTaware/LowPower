@@ -1,0 +1,57 @@
+
+
+
+########Create power domain
+#set_scope tb_top/uut
+create_power_domain PD_TOP \
+	-include_scope
+
+create_power_domain PD_ADDER_LSB \
+-elements {adder_lsb}
+
+create_power_domain PD_ADDER_MSB \
+-elements {adder_msb}
+
+
+########Supply Network
+create_supply_port VDD –direction in
+create_supply_port VSS –direction in
+
+create_supply_net Pwr –domain PD_TOP
+create_supply_net Gnd –domain PD_TOP
+
+connect_supply_net Pwr –ports {VDD}
+connect_supply_net Gnd –ports {VSS}
+
+set_domain_supply_net PD_TOP \
+	-primary_power_net Pwr \
+	-primary_ground_net Gnd
+
+
+######## External Switching
+# V1 to MSB 8bits
+create_supply_port V1 \
+	-domain PD_ADDER_MSB
+
+create_supply_net Gnd -reuse \
+	-domain PD_ADDER_MSB
+
+set_domain_supply_net PD_ADDER_MSB \
+	-primary_power_net V1 \
+	-primary_ground_net Gnd
+
+# V2 to MSB 8bits
+create_supply_port V2 \
+	-domain PD_ADDER_LSB
+
+create_supply_net Gnd -reuse \
+	-domain PD_ADDER_LSB
+
+set_domain_supply_net PD_ADDER_LSB \
+	-primary_power_net V2 \
+	-primary_ground_net Gnd
+
+
+
+
+
