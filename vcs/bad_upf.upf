@@ -1,27 +1,29 @@
 
-
+set upf_create_implicit_supply_sets false
 
 ########Create power domain
-#set_scope tb_top/uut
 create_power_domain PD_TOP \
 	-include_scope
 
 create_power_domain PD_ADDER_LSB \
--elements {adder_lsb}
+-elements {uut/adder_lsb}
 
 create_power_domain PD_ADDER_MSB \
--elements {adder_msb}
+-elements {uut/adder_msb}
 
 
 ########Supply Network
-create_supply_port VDD –direction in
-create_supply_port VSS –direction in
+create_supply_port VDD \
+	-direction in
+create_supply_port VSS \
+	-direction in
 
-create_supply_net Pwr –domain PD_TOP
-create_supply_net Gnd –domain PD_TOP
+create_supply_net Pwr -domain PD_TOP
+create_supply_net Gnd -domain PD_TOP
 
-connect_supply_net Pwr –ports {VDD}
-connect_supply_net Gnd –ports {VSS}
+connect_supply_net Pwr -ports {VDD}
+connect_supply_net Gnd -ports {VSS}
+
 
 set_domain_supply_net PD_TOP \
 	-primary_power_net Pwr \
@@ -50,8 +52,4 @@ create_supply_net Gnd -reuse \
 set_domain_supply_net PD_ADDER_LSB \
 	-primary_power_net V2 \
 	-primary_ground_net Gnd
-
-
-
-
 
