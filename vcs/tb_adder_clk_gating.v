@@ -40,6 +40,9 @@ module tb_top;
 	end
 
 	initial begin
+		$dumpfile("tb_adder_clk_gating.vcd");
+		$dumpvars(0,tb_top);
+	
 		forever begin
 			#10 clk = ~clk;
 		end	
